@@ -1,0 +1,92 @@
+@import "./variables";
+
+nav {
+  display: flex;
+  background-color: $primaryColor_nav;
+  align-items: center;
+  height: 6rem;
+  box-shadow: 0px 3px 4px grey;
+
+  .logo {
+    img {
+      width: 3rem;
+    }
+  }
+  .logo-name {
+    font-size: 30px;
+    
+  }
+  .LOGO {
+    flex: 1;
+    display: inherit;
+    margin-left: 2rem;
+    align-items: baseline;
+    h1::before {
+      content: "Hinga";
+      color: $secondaryColor;
+    }
+  }
+  .SEARCH-CONTAINER {
+    flex: 4;
+    display: flex;   
+    align-items: center;
+    padding-left:  3rem;
+    height: 100%;
+
+    .search-bar {
+    background-color: $primaryColor;
+      width: 20rem;
+      height: 3rem;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      padding: 0 16px;
+    }
+  }
+  .NAVBAR-ITEMS {
+    flex: 1;
+    margin-right: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    ul {
+      display: flex;
+      @include flexCenter();
+
+      li {
+        text-decoration: none;
+        list-style: none;
+
+      }
+    }
+    select {
+      appearance: unset;
+      outline: 0;
+      box-shadow: none;
+      border: none;
+      background: $primaryColor_nav;
+      background-image: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-family: Inter, Verdana;
+      .select-nav {
+        display: flex;
+        line-height: 3;
+        font-weight: bolder;
+      }
+      .select:hover::after {
+        color: #23b499;
+      }
+
+      &:focus,
+      &:hover {
+        outline: none;
+        transform: scale(1.05);
+        color: rgb(59, 58, 58);
+      }
+      option {
+        background-color: $primaryColor_nav;
+      }
+    }
+  }
+}

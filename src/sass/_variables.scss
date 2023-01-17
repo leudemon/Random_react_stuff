@@ -1,0 +1,11 @@
+$primaryColor: #c3c7d8ce;
+$secondaryColor: #46459E;
+$primaryColor_nav:#cdd1df ;
+$primaryColor_buttons: #363740;
+$shaddows: #212125;
+
+@mixin flexCenter{
+    align-items: center;
+    justify-self: center;
+}
+

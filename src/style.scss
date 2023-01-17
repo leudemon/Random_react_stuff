@@ -1,0 +1,15 @@
+@import './sass/header';
+@import './sass/navbar';
+@import './sass/body';
+@import './sass/cardme';
+
+@import './sass/variables';
+
+*{
+    font-family: Inter, sans-serif;
+
+}
+html{
+    background-color: $primaryColor_nav;
+
+}

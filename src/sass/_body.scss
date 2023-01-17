@@ -1,0 +1,138 @@
+@import "./variables";
+
+body {
+  background-color: $primaryColor_nav;
+  .container {
+    display: flex;
+    background-color: $primaryColor;
+  }
+
+  .main-body {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+    box-shadow: 0 1px 3px $shaddows;
+    border-radius: 10px;
+    width: 30rem;
+    background-color: rgba(255, 0, 0, 0.253);
+    margin:  1rem 3rem;
+    padding: 2rem;
+    .zoom {
+      
+      color: rgba(115, 0, 255, 0.959);
+      margin-top: 1.5rem;
+      padding: 4rem;
+      border-radius: 10px;
+      background-color: #23b49941;
+      background-position: center;
+      background-size: cover;
+      background-image: url('./assets/umuhinzi_1.png');
+
+      transition: all 0.2s;
+      .hidden-logo {
+        position: static;
+        bottom: 0rem;
+        right: 0rem;
+        img {
+          width: 8rem;
+          opacity: 0.5;
+        }
+      }
+    }
+    &:hover .zoom,
+    &:focus .zoom {
+      transform: scale(1.02);
+
+    }
+
+    .body-header {
+      display: flex;
+      padding-left: 1rem;
+    }
+    .body-items {
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+      
+      li{
+                &::marker{
+            font-size: 1.4rem ;
+            color: #23b499;
+        }
+      }
+    }
+  }
+  .side-body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: start;
+    background-color: $primaryColor;
+    border: 1px solid 1px;
+    padding: 1rem;
+    .body-header {
+      display: flex;
+      padding-left: 1rem;
+    }
+
+    .body-items {
+      margin-top: 0.5rem;
+      margin-left:  -1.2rem;
+      li{
+        color: rgba(78, 78, 78, 0.699);
+        font-size: small;
+        font-weight: 600;
+        list-style: none;
+        margin: 1rem;
+
+      }
+    }
+  }
+  .side-bar1{
+    flex: 1;
+    display: flex;
+    border-right: 1px solid rgba(128, 128, 128, 0.397);
+  }
+  .side-bar2{
+    flex: 1;
+    display: flex;
+    width: fit-content;
+    border-left: 1px solid rgba(128, 128, 128, 0.397);
+    .body-header{
+        display: flex;
+        font-size: 15px;        
+    }
+    .profile-container{
+        display: block;
+        padding: 1rem;
+        
+        justify-content: center;
+        .profile{
+            height: 10rem;
+            width: 10rem;
+            position: relative;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primaryColor_nav;
+            img{
+            width: 10rem;
+            background-color: $secondaryColor;
+            }
+        }
+        
+        .username{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            h1{
+                font-size: medium;
+            }
+        }
+        
+    }
+  }
+}
