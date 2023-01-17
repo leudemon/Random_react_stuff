@@ -3,10 +3,10 @@ This is a place where i randomly play with react to improve my understanding on 
 
 ## Procedures
 
-still in development, whatever comes out of this will be deployed, mostlikely using [https://www.netlify.coom]
+still in development...
 
 ### Deployment
-hatever comes out of this will be deployed, mostlikely using [https://www.netlify.com
+whatever comes out of this will be deployed, mostlikely using [https://www.netlify.com]
 
 
 
